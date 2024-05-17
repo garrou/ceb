@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  api:
+    build: /ceb-api
+    container_name: api
+    ports: 
+      - "8080:8080"
+    restart: always
+
+  ui:
+    build: /ceb-ui
+    container_name: ui
+    ports: 
+      - "80:80"
+    restart: always
